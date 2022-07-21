@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #logo{
+            width: 500px;
+            height:auto;
+           
+            margin: auto;
+        }
+        #logo>img{
+            width: 100%;
+        }
+        #logo+div{
+            width: 60%;
+            
+            margin: auto;
+            margin-top: 15px;
+            display: flex;
+            font-size: 23px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid red;
+
+        }
+        #logo+div>p{
+            margin: auto;
+        }
+        #logo+div+div{
+            width: 80%;
+            font-size: 30px;
+            font-style: inherit;
+           font-family: Arial Verdana Helvetica;
+            margin-left: 10%;
+          
+        }
+        #logo+div+div>p+p{
+          font-size: 17px;
+          font-family:'Roboto',sans-serif
+        }
+        #logo+div+div+div{
+            margin-left: 12%;
+            font-size: 17px;
+            font-family:'Roboto',sans-serif
+
+        }
+        #logo+div+div+div>ul{
+            list-style-type: disc ;
+          
+        }
+        #logo+div+div+div>h1{
+            font-size: 25px;
+        }
+       
+        select{
+            width: 480px;
+            height: 50px;
+            text-align: center;
+            background-color:crimson;
+            border-radius: 10px;
+            margin-top: 25px;
+            margin-left: 11%;
+            font-size: 20px;
+            color: white;
+            max-height: 1000px;
+            border: 0px;
+            overflow: auto;
+            
+            
+            
+        }
+        select:hover{
+            background-color: darkorange;
+        }
+        option{
+            height: 20px;
+            background-color: coral;
+            overflow:scroll;
+           
+            
+        }
+        button{
+            width: 400px;
+            height: 70px;
+            text-align: center;
+            background-color:rgb(220, 20, 20);
+            border-radius: 10px;
+            margin-top: 30px;
+            margin-left: 37%;
+            font-size: 20px;
+            color: white;
+            border: 0px;
+        }
+        button:hover{
+            background-color: teal;
+        }
+        #logo+div+div+div+#city+select+button+div{
+            width: 80%;
+            height: auto;
+           
+            margin-left: 11%;
+            margin-top: 10px;
+            font-size: 17px;
+            font-family:'Roboto',sans-serif
+            
+        }
+        #logo+div+div+div+#city+select+button+div+div{
+            width: 80%;
+            height: auto;
+            margin-left: 11%;
+            
+        }
+        #logo+div+div+div+#city+select+button+div+div>h1{
+            margin-top: 20px;
+            font-size: 25px;
+            font-family:'Roboto',sans-serif
+        }
+        #logo+div+div+div+#city+select+button+div+div>p{
+            font-size: 17px;
+          font-family:'Roboto',sans-serif
+        }
+        #logo+div+div+div+#city+select+button+div+div+div{
+            background-color: skyblue;
+            text-align: center;
+            padding-bottom: 60px;
+            width: 100%;
+            height: 300px;
+        }
+        #logo+div+div+div+#city+select+button+div+div+div>div{
+            
+           
+           
+            display: flex;
+            padding-left: 28%;
+           
+        }
+        #logo+div+div+div+#city+select+button+div+div+div>div>p{
+           margin-right: 200px;
+           font-size: 25px;
+        }
+        span{
+            font-size: 17px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <img src="https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/11/SparkAmerica2020-02-768x96.png" alt="">
+    </div>
+    <div>
+        <p><a href="navbar.html">JOIN THE MOVEMENT</a></p>
+        <p> <a href="partners.html">PARTNERS</a> </p>
+        <p> CALENDARS </p>
+        <p> CONTACT US</p>
+    </div>
+    <div>
+        <p>ONE PERSON, ONE COMMUNITY, ONE CITY AT A TIME</p>
+        <p>SparkAmerica is focused on building Fit & Healthy leaders all across the country. We do that by implementing programs in SparkCities - urban and suburban localities whose business and civic leaders have joined with us to create community and promote healthy living. We are proud of the work being done and the partnerships we've formed in each of these cities, and of the friendly competition we see each year as they strive to be the healthiest SparkCity in America!</p>
+    </div>
+    <div>
+        <h1>JOIN SPARKAMERICA</h1>
+        <p>We have over 70 cities participating in SparkAmerica, click below to sign up in your city today! You can join your city in three ways</p>
+       <ul >
+        <li>First, by being part of your #TeamCity.</li>
+        <li>Second, by joining an existing business or organization in your city.</li>
+        <li>Third, by requesting to add your business or organization.</li>
+       </ul>
+    </div>
+   
+    <select id="city">
+        <option value="">SELECT YOUR CITY (A to N)</option>
+        <option value="">Akron, OH</option>
+        <option value="">Albuquerque, NM</option>
+        <option value="">Blair County PA</option>
+        <option value="">Bartlett IL</option>
+        <option value="">Birmingham AL</option>
+        <option value="">Boise ID</option>
+        <option value="">Boston MA</option>
+        <option value="">CarolStream IL</option>
+        <option value="">Charlotte NC</option>
+        <option value="">Chicago IL</option>
+        <option value="">Cincinnati OH</option>
+        <option value="">Cleveland OH</option>
+        <option value="">Columbia SC</option>
+        <option value="">Dallas TX</option>
+        <option value="">Darien IL</option>
+        <option value="">Dayton OH</option>
+        <option value="">Denver CO</option>
+        <option value="">Detroit MI</option>
+        <option value="">Elyria OH</option>
+        <option value="">Evansville IN</option>
+        <option value="">Findlay OH</option>
+        <option value="">Gaithersburg MD</option>
+        <option value="">GlendaleHeights IL</option>
+        <option value="">GrandRapids MI</option>
+        <option value="">GreenBay WI</option>
+        <option value="">HanoverPark IL</option>
+        <option value="">Houston TX</option>
+        <option value="">Jackson MS</option>
+        <option value="">Kansas City MO</option>
+        <option value="">Lancaster OH</option>
+        <option value="">Las Vegas NV</option>
+        <option value="">Lincoln NE</option>
+        <option value="">Los Angeles CA</option>
+        <option value="">Miami FL</option>
+        <option value="">Milwaukee WI</option>
+        <option value="">Minneapolis MN</option>
+        <option value="">New Orleans LA</option>
+        <option value="">New York NY</option>
+        <option value="">Norman OK</option>
+    </select>
+    <select id="">
+        <option value="">SELECT YOUR CITY (O to Z)</option>
+        <option value="">Oakland CA</option>
+        <option value="">Oklahoma City OK</option>
+        <option value="">Omaha NE</option>
+        <option value="">Orlando FL</option>
+        <option value="">Philadelphia PA</option>
+        <option value="">Phoenix AZ</option>
+        <option value="">Pittsburgh PA</option>
+        <option value="">Portland OR</option>
+        <option value="">Raleigh NC</option>
+        <option value="">Rochester MN</option>
+        <option value="">Sacramento CA</option>
+        <option value="">San Antonio TX</option>
+        <option value="">San Diego CA</option>
+        <option value="">San Francisco CA</option>
+        <option value="">Seattle WA</option>
+        <option value="">SouthBend IN</option>
+        <option value="">Tallmadge OH</option>
+        <option value="">Tamarac FL</option>
+        <option value="">Tampa FL</option>
+        <option value="">Washington DC</option>
+        <option value="">WestChicago IL</option>
+        <option value="">WestHartford CT</option>
+        <option value="">WestPalmBeach FL</option>
+        <option value="">WinstonSalem NC</option>
+        <option value="">Youngstown OH</option>
+    </select>
+    <button>JOIN TEAM AMERICA</button>
+    <div>
+        <p>If you want to get involved in SparkAmerica but don't live in one of our participating cities, you can join the SparkAmerica Team. Click the button below to go to the TeamAmerica sign in page, make sure to choose TeamAmerica as your business/organization during the sign up process. <br><br>
+
+        Want to learn more about how the SparkAmerica Fit City Challenge works and also learn how you can connect to the tools inside SparkAmerica? Download our Toolkit  today!</p>
+    </div>
+    <div>
+        <h1>FIT CITY CHALLENGE</h1>
+       <p> The Fit City Challenge happens twice a year in the Spring and Fall and is one of our most active challenges. Once you've signed up fro SparkAmerica, you're automatically ready to participate in the Fit City Challenge to help your city become one of the healthiest in America. Check out the cities below to see the latest leaderboards and get your organization and city ready for the next Fit City Challenge.</p>
+    </div>
+    <div>
+        <div>
+        <p>CONTACT US <br> <span>support@sparkamerica.com <br> (888) 330-6891
+            SparkAmerica <br> P.O. Box 123, Oakmont, PA 15139</span></p>
+        <p>SPARKAMERICA<br><span>JOIN THE MOVEMENT JOIN THE MOVEMENT <br>PARTNERS <br>CALENDAR <br>THE APP <br>CONTACT US <br> REGISTER</span></p>
+        </div>
+       <p>® 2020 PeopleOne Health. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
