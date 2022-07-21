@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            background-image: url(https://spark360prodstorage.blob.core.windows.net/cityimages/cityteamamericacityimage96.jpg);
+        }
+        #sign{
+            width: 50%;
+            border: 1px solid red;
+            margin: auto;
+            margin-top: 100px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            background-color: white;
+            border-radius: 20px;
+           text-align: center;
+
+        }
+        #sign>p{
+            font-size: 30px;
+            font-family: 'Montserrat','Helvetica Neue',roboto, helvetica, arial, verdana, sans-serif;
+            text-align: center;
+           
+        }
+        form>p{
+            color: green;
+        }
+        form{
+            margin: a;
+        }
+        input{
+            width: 60%;
+            height: 30px;
+            padding: 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            border: 0px;
+        }
+        input:hover{
+            background-color: skyblue;
+        }
+        button{
+            width: 60%;
+            height: 40px;
+            font-size: 20px;
+            background-color: skyblue;
+            color: white;
+            border: 0px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+        button:hover{
+            background-color: blueviolet;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="sign">
+             <p>Welcome to SparkTeamAmerica!</p>
+             <form>
+                <p>All fields required</p>
+                
+                <input type="email" placeholder="Email" id="mail"><br><br>
+                <input type="password" placeholder="Password" id="pas"><br><br>
+                <button type="submit">LogIn</button><br><br><br>
+             </form>
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector("form").addEventListener("submit",proApp)
+
+    function proApp(){
+        event.preventDefault()
+        let data=JSON.parse(localStorage.getItem("proStore"))
+       
+        let bag=document.getElementById("mail").value;
+        let tap=document.getElementById("pas").value;
+
+        if(bag==data.mail && tap==data.pas){
+            alert("LogIn Successful ")
+            window.location.href="navbar.html"
+            console.log(data)
+        }else{
+            alert("Invalid Credentials")
+        }
+    }
+</script>
+</html>
