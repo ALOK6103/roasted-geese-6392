@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #logo{
+            width: 500px;
+            height:auto;
+           
+            margin: auto;
+        }
+        #logo>img{
+            width: 100%;
+        }
+        #logo+div{
+            width: 60%;
+            
+            margin: auto;
+            margin-top: 15px;
+            display: flex;
+            font-size: 23px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid red;
+            font-family: 'Montserrat','Helvetica Neue',roboto, helvetica, arial, verdana, sans-serif;
+        }
+        #logo+div>p{
+            margin: auto;
+        }
+        a{
+            text-decoration: none;
+            color:black; 
+           
+        }
+        #logo+div+div{
+            width: 80%;
+            margin: auto;
+        }
+        #logo+div+div>p{
+            font-size: 30px;
+            font-family: 'Montserrat','Helvetica Neue',roboto, helvetica, arial, verdana, sans-serif;
+        }
+        #logo+div+div>p+p{
+            font-size: 16px;
+            line-height: 24px;
+            font-family: 'Montserrat','Helvetica Neue',roboto, helvetica, arial, verdana, sans-serif;
+        }
+        #container{
+            width:80%;
+           
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:10px;
+            margin: auto;
+            margin-left: 10%;
+
+            
+        }#container>div{
+            border: 1px solid green;
+           
+            margin-top: 10px;
+            text-align: center;
+            height: 600px;
+            padding: 30px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            font-family: 'Montserrat','Helvetica Neue',roboto, helvetica, arial, verdana, sans-serif;
+        }
+        #container>div>img{
+           
+           width:100%; 
+           height: auto;
+           align-items: center;
+           
+        }
+        #container>div>p{
+            width: 95%;
+            
+            font-size: 30px;
+           
+        }
+        #container>div>p+p{
+            width: 90%;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        #container>div:nth-child(2)>p{
+            width: 60%;
+            margin-left: 60px;
+        }
+        #container>div:nth-child(2)>p+p{
+            width: auto;
+            margin-left: -10px;
+        }
+        #container>div:nth-child(4)>p{
+            width: 60%;
+            margin-left: 60px;
+        }
+        #container>div:nth-child(4)>p+p{
+            width: auto;
+            margin-left: -10px;
+        }
+        #container>div:nth-child(10)>p{
+            width: 60%;
+            margin-left: 60px;
+        }
+        #container>div:nth-child(10)>p+p{
+            width: auto;
+            margin-left: -10px;
+        }
+        #container+div{
+            width: 100%;
+            height: 400px;
+            margin-top: 30px;
+            border: 1px solid green;
+        }
+        #container+div>div{
+            display: flex;
+            margin-left: 30%;
+        }
+        span{
+           font-size: 17px; 
+           line-height: 20px;
+           margin-right: 50px;
+           font-family: 'Montserrat','Helvetica Neue',roboto, helvetica, arial, verdana, sans-serif;
+            }
+            #container+div>div>div>p{
+                font-size: 25px;
+                margin-top: 50px;
+                font-family: 'Montserrat','Helvetica Neue',roboto, helvetica, arial, verdana, sans-serif;
+            }
+            #container+div>div+p{
+                margin-top: 60px;
+                margin-left: 38%;
+            }
+            #container+div{
+                background-color: rgb(75, 131, 235);
+                color: white;
+            }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <img src="https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/11/SparkAmerica2020-02-768x96.png" alt="">
+    </div>
+    <div>
+        <p><a href="navbar.html">JOIN THE MOVEMENT</a></p>
+        <p> <a href="partners.html">PARTNERS</a> </p>
+        <p> <a href="calender.html">CALENDARS</a></p>
+        <p> <a href="contact.html">CONTACT US</a></p>
+    </div>
+    <div>
+        <p>OUR CALENDAR</p>
+        <p>SparkAmerica works hard to build community and be accessible to everyone, because leaders come in all shapes, sizes, and levels of ability so there's  something for everyone, all year round. The challenges and events on the SparkAmerica Calendar are designed by experts in lifestyle coaching and behavior change science for the total health of participants. That means subjects like nutrition, mental health, sleep, and even financial wellness will be covered. <br>
+
+            The physical challenges, like the Fit City Challenge, are based on Active Minutes. That means that anyone can participate, because all you need is to be active for at least 10 minutes a day. All kinds of activity - walk your dog, garden, roller skate, play basketball, dance, hike, skateboard, swim - count toward your Active Minutes! <br>
+            
+            All of our challenges utilize the PeopleOne Health portal, our free and easy-to-use technology platform.</p>
+    </div>
+    <div id="container"></div>
+    <div>
+        <div>
+            <div>
+            <p>CONTACT US <br> <span>support@sparkamerica.com <br> (888) 330-6891
+                SparkAmerica <br> P.O. Box 123, Oakmont, PA 15139</span></p>
+               </div>
+               <div>
+            <p>SPARKAMERICA<br><span>JOIN THE MOVEMENT JOIN THE MOVEMENT <br>PARTNERS <br>CALENDAR <br>THE APP <br>CONTACT US <br> REGISTER</span></p>
+            </div>
+          
+        </div>
+        <p>® 2020 PeopleOne Health. All Rights Reserved.</p>
+    </div>
+</body>
+<script>
+    let proCal=[
+        {
+            health:"30-DAYHEALTHY WEIGHT",
+            des:"New ways to think about what you eat and how you move",
+            month:"January 1 - 31",
+            img:"https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/Calendar_January.jpg",
+        },
+        {
+            health:"HEALTHY HEART",
+            des:"Simple habit changes to keep your ticker in peak condition.",
+            month:"February 1 - 28",
+            img:"https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/Calendar_February.jpg",
+
+        },
+        {
+            health:"MANAGE STRESS MINDFULLY",
+            des:"Mindfulness practice to help you deal with all life's demands",
+            month:"March 1 - 31",
+            img:"https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/Calendar_June.jpg",
+
+        },
+        {
+            health:"SPRING INTOSHAPE",
+            des:"Spring clean your fitness routine, become an exerciser for life",
+            month:"April 1 - 14",
+            img:"https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2022/01/Calendar_Spring.jpg",
+        },
+        {
+            health:"SPRING FIT CITY CHALLENGE",
+            des:"Fitness tracking, leaderboards and friendly competition",
+            month:"April 15 - May 31",
+            img:"https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/Calendar_FitCity1.jpg",
+        },
+        {
+            health:"FIT & HEALTHY LEADERSHIP",
+            des:"Learn about goal-setting, tools for success and leadership",
+            month:"June 1 - 30",
+            img:"https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/Calendar_March.jpg",
+        },
+        {
+            health:"HEALTHY SUMMER HABITS",
+            des:"A little time in nature will benefit you in big ways.",
+            month:"July 1 - 31",
+            img:"https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/Calendar_April.jpg",
+        },
+        {
+            health:"ACHIEVING FINANCIAL FREEDOM",
+            des:"Get your finances in shape with healthy budgeting habits",
+            month:"August 1 - 31",
+            img:"https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/Calendar_July.jpg",
+        },
+        {
+            health:"FALL FIT CITY CHALLENGE",
+            des:"Fitness tracking, leaderboards and friendly competition",
+            month:"September 1 - October 15",
+            img:"https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/Calendar_FitCity2.jpg",
+
+        },
+        {
+            health:"SLIP INTO SLUMBER",
+            des:"Better sleep habits, relaxation techniques, and sleep hygiene",
+            month:"October 16 - 31",
+            img:"https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/Calendar_October.jpg",
+
+        },
+        {
+            health:"HEALTHY HOLIDAYS & HELPING HANDS",
+            des:"Set realistic goals while having an impact on those around you. ",
+            month:"November 1 - 30",
+            img:"https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/Calendar_November.jpg",
+
+        },
+        {
+            health:"CREATE A POSITIVE MINDSET",
+            des:"Learn the importance of gratitude and positive thinking",
+            month:"December 1 - 31",
+            img:"https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/Calendar_August.jpg",
+        },
+    ];
+</script>
+<script>
+     let container=document.getElementById("container");
+function Display(data){
+    container.innerHTML=null;
+    data.forEach (function (elem){
+        let product=document.createElement("div");
+        let health=document.createElement("p");
+        health.innerText=elem.health;
+        let des=document.createElement("p");
+        des.innerText=elem.des;
+        let month=document.createElement("h4");
+        month.innerText=elem.month;
+        let img=document.createElement("img");
+        img.src=elem.img;
+        
+        product.append(health,des,month,img)
+        container.append(product);
+    })
+}
+console.log(proCal)
+Display(proCal);
+</script>
+</html>

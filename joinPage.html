@@ -9,15 +9,22 @@
     #logo{
         width: 550px;
         height: 130px;
-        position: absolute;
+       
         margin-left: 31%;
+       position: absolute;
+        z-index: 1;
         margin-top: 30px;
+        margin-bottom: -80px;
+        overflow: visible;
     }
     #logo>img{
         width: 100%;
+          
     }
      .container{ 
     width: 100%;
+    border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
    
      }
      .container>img{
@@ -36,6 +43,9 @@
         background-color: rgba(42, 149, 236, 0.452);
         color: white;
         border: 1px solid white;
+        z-index: 1;
+        margin-bottom: -80px;
+        overflow: visible;
      }
      button:hover{
        background-color: rgba(0, 0, 0, 0.559); 
@@ -84,6 +94,23 @@
      .container+div+div+div>p+p+p+p{
         text-align: left;
      }
+    
+     .container {
+  max-width: 100%;
+  max-height: 100%;
+  overflow:hidden;
+
+}
+.container img {
+  width: 100%;
+   -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.container img:hover {
+  transform: scale(2,2);
+}
      ul{
         text-align: left;
      }
@@ -185,6 +212,9 @@
      a{
         color: white;
         text-decoration: none;
+     }
+     #new:hover{
+      background-color: rgb(13, 13, 232);
      }
        
     </style>

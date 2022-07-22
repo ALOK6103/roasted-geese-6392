@@ -71,13 +71,14 @@
                 <input type="password" placeholder="Password" id="pas"><br><br>
                 <input type="date" placeholder="Date of Birth" id="dob"><br><br>
                 <input type="number" placeholder="Pin" id="pin"><br><br>
-                <button type="submit" > <a href="login.html">Create Account</a></button><br><br><br>
+                <button type="submit" > Create Account</button><br><br><br>
              </form>
         </div>
     </div>
 </body>
 <script>
     document.querySelector("form").addEventListener("submit",proApp)
+    //let arr=JSON.parse(localStorage.getItem("proStore"))||[]
     function proApp(event){
       event.preventDefault()
       let Name=document.getElementById("name").value;
@@ -93,8 +94,11 @@
         dob:Bob,
         pin:Pin,
       }
+      
       localStorage.setItem("proStore",JSON.stringify(obj))
+      window.location.href="login.html"
       console.log(obj)
+    
     }
     
 </script>
