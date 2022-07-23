@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #logo{
+            width: 500px;
+            height:auto;
+           
+            margin: auto;
+        }
+        #logo>img{
+            width: 100%;
+        }
+        #logo+div{
+            width: 60%;
+            
+            margin: auto;
+            margin-top: 15px;
+            display: flex;
+            font-size: 23px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid red;
+            font-family: 'Montserrat','Helvetica Neue',roboto, helvetica, arial, verdana, sans-serif;
+        }
+        #logo+div>p{
+            margin: auto;
+        }
+        a{
+            text-decoration: none;
+            color:black; 
+           
+        }
+        #para{
+            width: 80%;
+            margin: auto;
+        }
+        #para>p{
+           font-size: 30px;
+           font-family: 'Montserrat','Helvetica Neue',roboto, helvetica, arial, verdana, sans-serif;
+        }
+        #para>p+p{
+            font-size: 16px;
+            line-height: 20px;
+            font-family: 'Montserrat','Helvetica Neue',roboto, helvetica, arial, verdana, sans-serif;
+        }
+        #para+div{
+            width:80% ;
+            
+            margin: auto;
+            display: flex;
+           
+        }
+        #para+div>div{
+            width:37%;
+          
+           margin: auto;
+           padding-left: 20px;
+           padding-bottom: 20px;
+        }
+        #para+div>div>p+input{
+            width: 400px;
+            height: 30px;
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+        #para+div>div>p{
+            font-size: 25px;
+            font-family: 'Montserrat','Helvetica Neue',roboto, helvetica, arial, verdana, sans-serif;
+        }
+        #para+div>div>p+p{
+            font-size: 16px;
+            font-family: 'Montserrat','Helvetica Neue',roboto, helvetica, arial, verdana, sans-serif;
+        }
+        #new{
+            width: 400px;
+            height: 30px;
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+        button{
+            width: 150px;
+            height: 30px;
+            border-radius: 20px;
+            border: 0px;
+            background-color: rgb(222, 19, 19);
+            color: white;
+        }
+        #container+div{
+            width: 100%;
+            height: 400px;
+            margin-top: 30px;
+           
+         
+        }
+        #container+div>div{
+            display: flex;
+            margin-left: 30%;
+        }
+        span{
+           font-size: 17px; 
+           line-height: 20px;
+           margin-right: 50px;
+           font-family: 'Montserrat','Helvetica Neue',roboto, helvetica, arial, verdana, sans-serif;
+            }
+            #container+div>div>div>p{
+                font-size: 25px;
+                margin-top: 50px;
+                font-family: 'Montserrat','Helvetica Neue',roboto, helvetica, arial, verdana, sans-serif;
+            }
+            #container+div>div+p{
+                margin-top: 60px;
+                margin-left: 38%;
+                
+            }
+            #container+div{
+                background-color: rgb(75, 131, 235);
+                color: white;
+            }
+            label{
+                font-family: 'Montserrat','Helvetica Neue',roboto, helvetica, arial, verdana, sans-serif;
+            }
+            h4{
+                font-family: 'Montserrat','Helvetica Neue',roboto, helvetica, arial, verdana, sans-serif;
+            }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <img src="https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/11/SparkAmerica2020-02-768x96.png" alt="">
+    </div>
+    <div>
+        <p><a href="navbar.html">JOIN THE MOVEMENT</a></p>
+        <p> <a href="partners.html">PARTNERS</a> </p>
+        <p> <a href="calender.html">CALENDARS</a></p>
+        <p> <a href="contact.html">CONTACT US</a></p>
+    </div>
+    <div id="para">
+        <p>READY TO JOIN?</p>
+        <p>SparkAmerica is made up of organizations and businesses just like yours. If you're interested in participating, joining us as a strategic partner, or becoming a sponsor, we would love to hear from you. Have questions about how you can utilize our Annual Calendar in your organization? We can help you understand how it all works to deliver a thriving culture. <br>
+
+            If you're an individual interested in joining a team, please visit our SparkCities page to see if your city is listed. From there you can see visit one of our SparkCity home pages and look for your organization. If you don't see your organization, ask your HR leader to sign up and enter your business name and, once verified, your organization will become a part of the movement.</p>
+    </div>
+    <div>
+        <div>
+            <p>REACH OUT</p>
+            <input type="text" placeholder="Your Name"><br><br>
+            <input type="email" placeholder="Email Address" id="new">
+            <h4>Your Interest in SparkAmerica</h4>
+            <input type="checkbox">
+            <label for="">Interested in Partnering</label><br>
+            <input type="checkbox">
+            <label for="">Interested in Sponsoring</label><br>
+            <input type="checkbox">
+            <label for="">Please bring SparkAmerica to Our City</label><br><br>
+            <button type="click" id="sub">SEND MESSAGE</button>
+        </div>
+        <div>
+            <p>OUR INFORMATION</p>
+            <p> <a href="">support@sparkamerica.com </a><br>
+                (888) 330-6891 <br>
+                SparkAmerica <br>
+                P.O. Box 123, Oakmont, PA 15139 <br>
+            </p>
+        </div>
+    </div>
+    <div id="container"></div>
+    <div>
+        <div>
+            <div>
+            <p>CONTACT US <br> <span>support@sparkamerica.com <br> (888) 330-6891
+                SparkAmerica <br> P.O. Box 123, Oakmont, PA 15139</span></p>
+               </div>
+               <div>
+            <p>SPARKAMERICA<br><span>JOIN THE MOVEMENT JOIN THE MOVEMENT <br>PARTNERS <br>CALENDAR <br>THE APP <br>CONTACT US <br> REGISTER</span></p>
+            </div>
+          
+        </div>
+        <p>® 2020 PeopleOne Health. All Rights Reserved.</p>
+    </div>
+</body>
+<script>
+    document.getElementById("sub").addEventListener("click", toPro)
+
+    function toPro(){
+        alert("Message sent")
+    }
+</script>
+</html>
